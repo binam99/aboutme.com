@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fade-transition fade-in">
+    <div class="form-container">
+        <div class="form-wrapper">
+              <form id="register-form">
+                <h2>Register</h2>
+                <label for="register-name">Name:</label>
+                <input type="text" id="register-name" name="name" placeholder="Enter your name" required>
+                <label for="register-number">Phone Number:</label>
+                <input type="tel" id="register-number" name="number" placeholder="Enter your phone number" required>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="email" placeholder="Enter your email" required>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="password" placeholder="Enter your password" required>
+                <button type="submit">Register</button>
+                <p class="login-link">Already have an account? <a href="index.html">Login here</a></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetUrl = this.getAttribute('href');
+
+                    document.body.classList.add('fade-out');
+
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 500); // Match the transition duration
+                });
+            });
+        });
+    </script>
+</body>
+</html>

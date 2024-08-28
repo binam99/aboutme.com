@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Exam - Grade 8</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        #logo {
+            width: 100px;
+            height: auto;
+        }
+        main {
+            margin: 20px;
+        }
+        #timer {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: right;
+            color: #d9534f;
+        }
+        .question {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .question:hover {
+            background-color: #f9f9f9;
+            transform: scale(1.02);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+ 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="c.png" alt="Bishnu Home Tuition Logo" id="logo">
+        <h1>Bishnu's Home Tuition</h1>
+        <p>Dhungedhara,Buddha Chowk</p>
+		<p>
+		</p>
+    </header>
+	 <div class="marks-info">
+            <p><strong>Total Marks:</strong> 28</p>
+            <p><strong>Pass Marks:</strong> 20</p>
+        </div>
+    <main>
+	     <!-- Student Information -->
+        <div id="student-info">
+            <p><strong>Student Name:</strong> <input type="text" id="studentName" name="studentName"></p>
+            <p><strong>Roll Number:</strong> <input type="text" id="rollNumber" name="rollNumber"></p>
+            <p><strong>Class:</strong> <input type="text" id="class" name="class"></p>
+        </div>
+        <h1>Class 11 MCQ Questions</h1>
+    <div class="timer" id="timer">Time remaining: 14:00</div>
+    <form id="quizForm">
+        <!-- Mathematics -->
+        <h2>Mathematics</h2>
+        <div class="question">
+            <p>&#9633; What is the value of <i>sin<sup>2</sup> &#920; + cos<sup>2</sup> &#920;</i>?</p>
+            <div class="options">
+                <label><input type="radio" name="math1" value="0"> A) 0</label>
+                <label><input type="radio" name="math1" value="1"> B) 1</label>
+                <label><input type="radio" name="math1" value="sin2theta"> C) sin 2&#920;</label>
+                <label><input type="radio" name="math1" value="cos2theta"> D) cos 2&#920;</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>&#9633; The derivative of <i>x<sup>2</sup> + 3x + 2</i> with respect to <i>x</i> is:</p>
+            <div class="options">
+                <label><input type="radio" name="math2" value="2x+3"> A) 2x + 3</label>
+                <label><input type="radio" name="math2" value="2x"> B) 2x</label>
+                <label><input type="radio" name="math2" value="3x+2"> C) 3x + 2</label>
+                <label><input type="radio" name="math2" value="x2+3"> D) x<sup>2</sup> + 3</label>
+            </div>
+        </div>
+
+        <!-- Physics -->
+        <h2>Physics</h2>
+        <div class="question">
+            <p>&#9633; The unit of electric charge is:</p>
+            <div class="options">
+                <label><input type="radio" name="phy1" value="volt"> A) Volt</label>
+                <label><input type="radio" name="phy1" value="ohm"> B) Ohm</label>
+                <label><input type="radio" name="phy1" value="ampere"> C) Ampere</label>
+                <label><input type="radio" name="phy1" value="coulomb"> D) Coulomb</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>&#9633; The speed of light in a vacuum is approximately:</p>
+            <div class="options">
+                <label><input type="radio" name="phy2" value="3x10^8"> A) 3 × 10<sup>8</sup> m/s</label>
+                <label><input type="radio" name="phy2" value="3x10^6"> B) 3 × 10<sup>6</sup> m/s</label>
+                <label><input type="radio" name="phy2" value="3x10^10"> C) 3 × 10<sup>10</sup> m/s</label>
+                <label><input type="radio" name="phy2" value="3x10^5"> D) 3 × 10<sup>5</sup> m/s</label>
+            </div>
+        </div>
+
+        <!-- Chemistry -->
+        <h2>Chemistry</h2>
+        <div class="question">
+            <p>&#9633; Which of the following is an example of a physical change?</p>
+            <div class="options">
+                <label><input type="radio" name="chem1" value="rusting"> A) Rusting of iron</label>
+                <label><input type="radio" name="chem1" value="burning"> B) Burning of wood</label>
+                <label><input type="radio" name="chem1" value="melting"> C) Melting of ice</label>
+                <label><input type="radio" name="chem1" value="fermentation"> D) Fermentation of grapes</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>&#9633; The atomic number of an element is:</p>
+            <div class="options">
+                <label><input type="radio" name="chem2" value="neutrons"> A) The number of neutrons</label>
+                <label><input type="radio" name="chem2" value="electrons"> B) The number of electrons</label>
+                <label><input type="radio" name="chem2" value="protons"> C) The number of protons</label>
+                <label><input type="radio" name="chem2" value="sum"> D) The sum of protons and neutrons</label>
+            </div>
+        </div>
+
+        <!-- Biology -->
+        <h2>Biology</h2>
+        <div class="question">
+            <p>&#9633; Which organ in the human body is primarily responsible for detoxification?</p>
+            <div class="options">
+                <label><input type="radio" name="bio1" value="heart"> A) Heart</label>
+                <label><input type="radio" name="bio1" value="lungs"> B) Lungs</label>
+                <label><input type="radio" name="bio1" value="liver"> C) Liver</label>
+                <label><input type="radio" name="bio1" value="kidney"> D) Kidney</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>&#9633; Which of the following is not a part of the plant cell?</p>
+            <div class="options">
+                <label><input type="radio" name="bio2" value="cell_wall"> A) Cell wall</label>
+                <label><input type="radio" name="bio2" value="chloroplast"> B) Chloroplast</label>
+                <label><input type="radio" name="bio2" value="lysosome"> C) Lysosome</label>
+                <label><input type="radio" name="bio2" value="vacuole"> D) Central vacuole</label>
+            </div>
+        </div>
+
+        <!-- English -->
+        <h2>English</h2>
+        <div class="question">
+            <p>&#9633; Which of the following is an example of a metaphor?</p>
+            <div class="options">
+                <label><input type="radio" name="eng1" value="wind"> A) The wind whispered through the trees.</label>
+                <label><input type="radio" name="eng1" value="cat"> B) The cat ran quickly.</label>
+                <label><input type="radio" name="eng1" value="heart_of_stone"> C) He has a heart of stone.</label>
+                <label><input type="radio" name="eng1" value="blue_sky"> D) The sky was as blue as the ocean.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>&#9633; In which tense is the sentence "She is reading a book" written?</p>
+            <div class="options">
+                <label><input type="radio" name="eng2" value="past_simple"> A) Past simple</label>
+                <label><input type="radio" name="eng2" value="present_continuous"> B) Present continuous</label>
+                <label><input type="radio" name="eng2" value="future_perfect"> C) Future perfect</label>
+                <label><input type="radio" name="eng2" value="past_continuous"> D) Past continuous</label>
+            </div>
+        </div>
+
+        <!-- History -->
+        <h2>History</h2>
+        <div class="question">
+            <p>&#9633; Who was the first President of the United States?</p>
+            <div class="options">
+                <label><input type="radio" name="hist1" value="washington"> A) George Washington</label>
+                <label><input type="radio" name="hist1" value="lincoln"> B) Abraham Lincoln</label>
+                <label><input type="radio" name="hist1" value="adams"> C) John Adams</label>
+                <label><input type="radio" name="hist1" value="jefferson"> D) Thomas Jefferson</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>&#9633; The Industrial Revolution began in which country?</p>
+            <div class="options">
+                <label><input type="radio" name="hist2" value="france"> A) France</label>
+                <label><input type="radio" name="hist2" value="germany"> B) Germany</label>
+                <label><input type="radio" name="hist2" value="usa"> C) United States</label>
+                <label><input type="radio" name="hist2" value="uk"> D) United Kingdom</label>
+            </div>
+        </div>
+
+        <!-- Geography -->
+        <h2>Geography</h2>
+        <div class="question">
+            <p>&#9633; Which is the largest ocean on Earth?</p>
+            <div class="options">
+                <label><input type="radio" name="geo1" value="atlantic"> A) Atlantic Ocean</label>
+                <label><input type="radio" name="geo1" value="indian"> B) Indian Ocean</label>
+                <label><input type="radio" name="geo1" value="arctic"> C) Arctic Ocean</label>
+                <label><input type="radio" name="geo1" value="pacific"> D) Pacific Ocean</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>&#9633; Mount Everest is located in which mountain range?</p>
+            <div class="options">
+                <label><input type="radio" name="geo2" value="andes"> A) Andes</label>
+                <label><input type="radio" name="geo2" value="alps"> B) Alps</label>
+                <label><input type="radio" name="geo2" value="himalayas"> C) Himalayas</label>
+                <label><input type="radio" name="geo2" value="rockies"> D) Rockies</label>
+            </div>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+    <div class="passFail" id="passFail"></div>
+
+    <script>
+        // Timer variables
+        let timeRemaining = 14 * 60; // 14 minutes in seconds
+        const timerElement = document.getElementById('timer');
+        const formElement = document.getElementById('quizForm');
+
+        function updateTimer() {
+            const minutes = Math.floor(timeRemaining / 60);
+            const seconds = timeRemaining % 60;
+            timerElement.textContent = `Time remaining: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                timerElement.textContent = 'Time is up!';
+                formElement.querySelectorAll('input[type="radio"]').forEach(input => input.disabled = true);
+                document.querySelector('button').disabled = true;
+                checkAnswers();
+            }
+            timeRemaining--;
+        }
+
+        const timerInterval = setInterval(updateTimer, 1000);
+
+        function checkAnswers() {
+            // Correct answers
+            const answers = {
+                math1: '1',
+                math2: '2x+3',
+                phy1: 'coulomb',
+                phy2: '3x10^8',
+                chem1: 'melting',
+                chem2: 'protons',
+                bio1: 'liver',
+                bio2: 'lysosome',
+                eng1: 'heart_of_stone',
+                eng2: 'present_continuous',
+                hist1: 'washington',
+                hist2: 'uk',
+                geo1: 'pacific',
+                geo2: 'himalayas'
+            };
+
+            let correctAnswersCount = 0;
+            let result = '';
+
+            // Check each answer
+            for (const [key, correctAnswer] of Object.entries(answers)) {
+                const selected = document.querySelector(`input[name="${key}"]:checked`);
+                if (selected) {
+                    const answer = selected.value;
+                    if (answer === correctAnswer) {
+                        correctAnswersCount++;
+                        result += `<p>Question ${key} is correct.</p>`;
+                    } else {
+                        result += `<p>Question ${key} is incorrect. Correct answer: ${correctAnswer}</p>`;
+                    }
+                } else {
+                    result += `<p>Question ${key} is not answered.</p>`;
+                }
+            }
+
+            // Display result and pass/fail message
+            document.getElementById('result').innerHTML = result;
+
+            if (correctAnswersCount >= 20) {
+                document.getElementById('passFail').innerHTML = '<p class="pass">Congratulations! You have passed the test.</p>';
+            } else {
+                document.getElementById('passFail').innerHTML = '<p class="fail">Unfortunately, you have failed. Please try again.</p>';
+            }
+        }
+    </script>
+</body>

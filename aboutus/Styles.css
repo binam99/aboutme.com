@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;  /* Dark background color */
+    color: #fff;  /* White text color */
+}
+
+.about-us-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #1c1c1c;  /* Darker background for contrast */
+    border-bottom: 2px solid #444;
+}
+
+.about-us-content {
+    flex: 1;
+    padding-right: 20px;
+    transition: color 0.5s ease, transform 0.5s ease; /* Transition effect for text */
+}
+
+.about-us-content:hover {
+    color: #00bcd4;  /* Change text color on hover */
+    transform: scale(1.02);  /* Slightly enlarge text on hover */
+}
+
+.about-us-image img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.projects-section {
+    padding: 40px;
+    background-color: #1c1c1c;  /* Darker background for contrast */
+    text-align: center;
+}
+
+.projects-section h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #00bcd4;  /* Cyan color for heading */
+}
+
+.project-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-box {
+    background-color: #222;  /* Dark box color */
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;  /* Remove underline from links */
+    color: #fff;  /* White text color */
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.project-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #ff9800;  /* Orange color for project titles */
+}
+
+.project-box p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #ccc;  /* Light grey color for project descriptions */
+}
+
+footer {
+    padding: 20px;
+    background-color: #1c1c1c;  /* Darker footer background */
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.social-links img {
+    width: 100%;
+    height: auto;
+    filter: invert(100%);  /* Invert colors for white icons */
+    transition: filter 0.3s ease;
+}
+
+.social-links a:hover img {
+    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(340deg);  /* Orange color on hover */
+}
